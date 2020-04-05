@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;300;400;500;700;800;900&display=swap");
 @import url("https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
 /* CSS RESET */
@@ -163,12 +164,23 @@ h2, .meta, p, address, ul {
 }
 
 ul {
-  padding-left: 10px;
+  list-style-type: none;
+}
+ul li {
+  margin-left: 1em;
+}
+ul li::before {
+  content: "•";
+  font-size: 2em;
+  position: absolute;
+  margin-left: -0.5em;
 }
 
 li > ul {
-  list-style-type: none;
   margin-bottom: 0;
+}
+li > ul li::before {
+  content: none;
 }
 
 a {

@@ -37,12 +37,28 @@ h2, .meta, p, address, ul{
 }
 
 ul {
-  padding-left: 10px;
+  list-style-type: none;
+
+  li {
+    margin-left: 1em;
+  }
+
+  li::before {
+    content: "•";
+    font-size: 1em * $bullet-ratio;
+    position: absolute;
+    margin-left: -1em / $bullet-ratio;
+  }
+
 }
 
 li > ul {
-  list-style-type: none;
   margin-bottom: 0;
+
+  li::before {
+    content: none;
+  }
+
 }
 
 a {
