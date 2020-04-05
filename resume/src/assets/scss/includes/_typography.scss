@@ -1,0 +1,54 @@
+/* Use Heebo Regular (400) & Bold (700) */
+
+body {
+  font-family: "Heebo", sans-serif;
+  color: $black;
+  font-size: $font-base;
+  line-height: 1.5em;
+}
+
+h1, h2, h3, h4 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  background-color: $black;
+  color: $white;
+  padding: 0 $spacing;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+h3 {
+  font-size: 1.15em;
+}
+
+h3, h4 {
+  margin-bottom: $spacing;
+}
+
+h2, .meta, p, address, ul{
+  margin-bottom: $spacing*2;
+}
+
+ul {
+  padding-left: 10px;
+}
+
+li > ul {
+  list-style-type: none;
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+  color: $link;
+}
+
+a:focus, a:hover {
+  text-decoration: underline
+}
