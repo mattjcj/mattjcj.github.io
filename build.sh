@@ -2,22 +2,19 @@
 set -e
 
 # create directory if it doesn't exist
-mkdir -p build/dist/assets
+mkdir -p dist/
 
 # clean our dist folder
-rm -r build/dist/*
+rm -r dist/*
 
 # copy all our html files
-rsync -avr --exclude='assets/' build/src/* build/dist
+rsync -avr --exclude='assets/' src/* dist
 
 # create images directory if it doesn't exist
-mkdir -p build/dist/assets/images
+mkdir -p dist/assets/images
 
 # copy image assets separately
-rsync -avr build/src/assets/images build/dist/assets/images
+rsync -avr src/assets/images dist/assets/images
 
 # build our css files
-sass build/src/assets/scss:build/dist/assets/css
-
-# and finally copy our production files to root
-cp -r build/dist/* .
+sass src/assets/scss:dist/assets/css

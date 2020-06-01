@@ -1,0 +1,28 @@
+{
+  "name": "mattjcj.github.io",
+  "version": "1.0.0",
+  "description": "Personal website",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist -b master",
+    "build": "./build.sh",
+    "dev": "nodemon --watch src -e html,scss --exec './build.sh && serve dist'",
+    "clean": "node node_modules/gh-pages/bin/gh-pages-clean.js ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattjcj/mattjcj.github.io.git"
+  },
+  "author": "Matthew Jorissen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mattjcj/mattjcj.github.io/issues"
+  },
+  "devDependencies": {
+    "serve": "^11.3.1",
+    "gh-pages": "^2.2.0",
+    "nodemon": "^2.0.4"
+  },
+  "homepage": "https://github.com/mattjcj/mattjcj.github.io#readme"
+}
