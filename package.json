@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "deploy": "npm run build && gh-pages -d dist -b master",
-    "build": "./build.sh",
-    "dev": "nodemon --watch src -e html,scss --exec './build.sh && serve dist'",
+    "build": "npm run resume && ./scripts/build.sh",
+    "dev": "nodemon --watch src -e html,scss --exec './scripts/build.sh && serve dist'",
+    "resume": "node scripts/resume-to-pdf.js",
     "clean": "node node_modules/gh-pages/bin/gh-pages-clean.js ",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -22,7 +23,8 @@
   "devDependencies": {
     "serve": "^11.3.1",
     "gh-pages": "^2.2.0",
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.4",
+    "puppeteer": "3.1.0"
   },
   "homepage": "https://github.com/mattjcj/mattjcj.github.io#readme"
 }
