@@ -95,6 +95,9 @@ header article, .content .column {
   }
 }
 @media print {
+  @page {
+    margin: 0;
+  }
   body {
     page-break-inside: avoid;
   }
@@ -108,6 +111,10 @@ header article, .content .column {
     display: inline-table;
     width: 33.3333333333%;
     white-space: initial;
+  }
+
+  .no-print {
+    display: none;
   }
 }
 .header article {
