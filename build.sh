@@ -14,7 +14,7 @@ rsync -avr --exclude='assets/' src/* dist
 mkdir -p dist/assets/images
 
 # copy image assets separately
-rsync -avr src/assets/images dist/assets/images
+rsync -avr src/assets/images dist/assets/
 
 # build our css files
 sass src/assets/scss:dist/assets/css
