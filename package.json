@@ -4,7 +4,7 @@
   "description": "Personal website",
   "main": "index.js",
   "scripts": {
-    "deploy": "gh-pages -d dist -b master",
+    "deploy": "npm run build && gh-pages -d dist -b master",
     "build": "./build.sh",
     "dev": "nodemon --watch src -e html,scss --exec './build.sh && serve dist'",
     "clean": "node node_modules/gh-pages/bin/gh-pages-clean.js ",
