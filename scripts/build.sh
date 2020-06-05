@@ -23,4 +23,4 @@ echo ""
 echo "Compiling CSS files"
 
 # build our css files
-sass src/assets/scss:dist/assets/css
+node-sass --output dist/assets/css src/assets/scss
