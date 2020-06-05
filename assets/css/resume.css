@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;300;400;500;700;800;900&display=swap");
-@import url("https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css");
 /* CSS RESET */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -24,33 +24,27 @@ time, mark, audio, video {
   border: 0;
   font-size: 1em;
   font: inherit;
-  vertical-align: baseline;
-}
+  vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-  display: block;
-}
+  display: block; }
 
 body {
-  line-height: 1;
-}
+  line-height: 1; }
 
 blockquote, q {
-  quotes: none;
-}
+  quotes: none; }
 
 blockquote:before, blockquote:after,
 q:before, q:after {
-  content: "";
-  content: none;
-}
+  content: '';
+  content: none; }
 
 table {
   border-collapse: collapse;
-  border-spacing: 0;
-}
+  border-spacing: 0; }
 
 /* END OF CSS RESET */
 * {
@@ -58,147 +52,115 @@ table {
   -webkit-print-color-adjust: exact !important;
   /* Chrome, Safari */
   color-adjust: exact !important;
-  /*Firefox*/
-}
+  /*Firefox*/ }
 
-.with-icon {
-  padding-left: 25px;
-}
 .with-icon i {
   position: absolute;
   margin-left: -25px;
-  margin-top: 2px;
-  font-size: 1.2em;
-}
+  margin-top: 2px; }
+
+header .with-icon {
+  padding-left: 25px; }
+  header .with-icon i {
+    font-size: 1.2em; }
+
+.content .with-icon article {
+  padding-left: 25px; }
 
 body {
   padding: 40px 20px;
   max-width: 1920px;
-  margin: auto;
-}
+  margin: auto; }
 
 header {
-  margin-bottom: 20px;
-}
+  margin-bottom: 20px; }
 
 header article, .content .column {
-  padding: 0 15px;
-}
+  padding: 0 15px; }
 
 @media screen and (min-width: 640px) {
   header, .content {
-    display: flex;
-  }
-
+    display: flex; }
   header article, .content .column {
-    width: 33.3333333333%;
-  }
-}
+    width: 33.33333%; } }
+
 @media print {
   @page {
-    margin: 0;
-  }
+    margin: 0; }
   body {
-    page-break-inside: avoid;
-  }
-
+    page-break-inside: avoid; }
   header, .content {
     display: block;
-    white-space: nowrap;
-  }
-
+    white-space: nowrap; }
   header article, .content .column {
     display: inline-table;
-    width: 33.3333333333%;
-    white-space: initial;
-  }
-
+    width: 33.33333%;
+    white-space: initial; }
   .no-print {
-    display: none;
-  }
-}
+    display: none; } }
+
 .header article {
-  margin-bottom: 0;
-}
+  margin-bottom: 0; }
 
 .content article {
-  border-top: 2px dashed #2c2a2c;
-  padding-top: 10px;
-}
+  border-top: 2px solid #2c2a2c;
+  padding-top: 10px; }
 
 .content article:first-of-type {
   border-top: none;
-  padding-top: 0;
-}
+  padding-top: 0; }
 
 .section-content {
-  padding: 0 5px;
-}
+  padding: 0 5px; }
 
 /* Use Heebo Regular (400) & Bold (700) */
 body {
   font-family: "Heebo", sans-serif;
   color: #2c2a2c;
   font-size: 12px;
-  line-height: 1.5em;
-}
+  line-height: 1.5em; }
 
 h1, h2, h3, h4 {
-  font-weight: bold;
-}
+  font-weight: bold; }
 
 h1 {
   font-size: 2em;
-  margin-bottom: 5px;
-}
+  margin-bottom: 5px; }
 
 h2 {
   background-color: #2c2a2c;
   color: #ffffff;
   padding: 0 5px;
   font-size: 1.3em;
-  line-height: 1.5em;
-}
+  line-height: 1.5em; }
 
 h3 {
-  font-size: 1.15em;
-}
+  font-size: 1.15em; }
 
-h3, h4 {
-  margin-bottom: 5px;
-}
+h4 {
+  margin-bottom: 5px; }
 
 h2, .meta, p, address, ul {
-  margin-bottom: 10px;
-}
+  margin-bottom: 10px; }
 
 ul {
-  list-style-type: none;
-}
-ul li {
-  margin-left: 1em;
-}
-ul li::before {
-  content: "•";
-  font-size: 2em;
-  position: absolute;
-  margin-left: -0.5em;
-}
+  list-style-type: none; }
+  ul li {
+    margin-left: 1em; }
+  ul li::before {
+    content: "•";
+    font-size: 2em;
+    position: absolute;
+    margin-left: -0.5em; }
 
 li > ul {
-  margin-bottom: 0;
-}
-li > ul li::before {
-  content: none;
-}
+  margin-bottom: 0; }
+  li > ul li::before {
+    content: none; }
 
 a {
   text-decoration: none;
-  color: #265b9b;
-}
+  color: #265b9b; }
 
 a:focus, a:hover {
-  text-decoration: underline;
-}
-
-/*# sourceMappingURL=resume.css.map */
+  text-decoration: underline; }
